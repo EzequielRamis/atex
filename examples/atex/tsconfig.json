@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "checkJs": true,
+    "noEmit": true,
+    "types": ["node", "../../types/all"]
+  }
+}

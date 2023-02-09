@@ -1,0 +1,910 @@
+{
+  "menu-item#new-in-desktop": {
+    "props": {
+      "id": "menu-item-new-in-desktop",
+      "blockClass": [
+        "category-new-in"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "New In",
+        "text": "New In"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-pants-leggings": {
+    "props": {
+      "id": "menu-item-women-subitem-pants-leggings",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pants & Leggings",
+        "text": "Pants & Leggings"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-tops": {
+    "props": {
+      "id": "menu-item-women-subitem-tops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tops",
+        "text": "Tops"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-jackets-sweatshirts": {
+    "props": {
+      "id": "menu-item-women-subitem-jackets-sweatshirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Jackets & Sweatshirts",
+        "text": "Jackets & Sweatshirts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-short-sleeve-shirts": {
+    "props": {
+      "id": "menu-item-women-subitem-short-sleeve-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Short Sleeve Shirts",
+        "text": "Short Sleeve Shirts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-thermal-shirts": {
+    "props": {
+      "id": "menu-item-women-subitem-thermal-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Thermal Shirts",
+        "text": "Thermal Shirts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-long-sleeve-shirts": {
+    "props": {
+      "id": "menu-item-women-subitem-long-sleeve-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Long Sleeve Shirts",
+        "text": "Long Sleeve Shirts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-tank-tops": {
+    "props": {
+      "id": "menu-item-women-subitem-tank-tops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tank Tops",
+        "text": "Tank Tops"
+      }
+    }
+  },
+  "menu#category-women-submenu-0": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-women-subitem-pants-leggings",
+      "menu-item#category-women-subitem-tops",
+      "menu-item#category-women-subitem-jackets-sweatshirts",
+      "menu-item#category-women-subitem-short-sleeve-shirts",
+      "menu-item#category-women-subitem-thermal-shirts",
+      "menu-item#category-women-subitem-long-sleeve-shirts",
+      "menu-item#category-women-subitem-tank-tops"
+    ]
+  },
+  "menu-item#category-women-subitem-bikers-shorts": {
+    "props": {
+      "id": "menu-item-women-subitem-bikers-shorts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Bikers & Shorts",
+        "text": "Bikers & Shorts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-skirts": {
+    "props": {
+      "id": "menu-item-women-subitem-skirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Skirts",
+        "text": "Skirts"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-swimwear": {
+    "props": {
+      "id": "menu-item-women-subitem-swimwear",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Swimwear",
+        "text": "Swimwear"
+      }
+    }
+  },
+  "menu-item#category-women-subitem-accessories": {
+    "props": {
+      "id": "menu-item-women-subitem-accessories",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu#category-women-submenu-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-women-subitem-bikers-shorts",
+      "menu-item#category-women-subitem-skirts",
+      "menu-item#category-women-subitem-swimwear",
+      "menu-item#category-women-subitem-accessories"
+    ]
+  },
+  "submenu#category-women": {
+    "children": [
+      "menu#category-women-submenu-0",
+      "menu#category-women-submenu-1"
+    ]
+  },
+  "menu-item#women-desktop": {
+    "props": {
+      "id": "menu-item-women-desktop",
+      "blockClass": [
+        "category-women"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Women",
+        "text": "Women"
+      }
+    },
+    "blocks": [
+      "submenu#category-women"
+    ]
+  },
+  "menu-item#category-men-subitem-sweatshirts-jackets": {
+    "props": {
+      "id": "menu-item-men-subitem-sweatshirts-jackets",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sweatshirts & Jackets",
+        "text": "Sweatshirts & Jackets"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-pants": {
+    "props": {
+      "id": "menu-item-men-subitem-pants",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pants",
+        "text": "Pants"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-short-sleeve-shirts": {
+    "props": {
+      "id": "menu-item-men-subitem-short-sleeve-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Short Sleeve Shirts",
+        "text": "Short Sleeve Shirts"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-thermal-shirts": {
+    "props": {
+      "id": "menu-item-men-subitem-thermal-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Thermal Shirts",
+        "text": "Thermal Shirts"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-tank-tops": {
+    "props": {
+      "id": "menu-item-men-subitem-tank-tops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tank Tops",
+        "text": "Tank Tops"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-shorts-bermudas": {
+    "props": {
+      "id": "menu-item-men-subitem-shorts-bermudas",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shorts and Bermudas",
+        "text": "Shorts and Bermudas"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-backpacks-bags": {
+    "props": {
+      "id": "menu-item-men-subitem-backpacks-bags",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Backpacks and Bags",
+        "text": "Backpacks and Bags"
+      }
+    }
+  },
+  "menu#category-men-submenu-0": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-men-subitem-sweatshirts-jackets",
+      "menu-item#category-men-subitem-pants",
+      "menu-item#category-men-subitem-short-sleeve-shirts",
+      "menu-item#category-men-subitem-thermal-shirts",
+      "menu-item#category-men-subitem-tank-tops",
+      "menu-item#category-men-subitem-shorts-bermudas",
+      "menu-item#category-men-subitem-backpacks-bags"
+    ]
+  },
+  "menu-item#category-men-subitem-swimwear": {
+    "props": {
+      "id": "menu-item-men-subitem-swimwear",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Swimwear",
+        "text": "Swimwear"
+      }
+    }
+  },
+  "menu-item#category-men-subitem-accessories": {
+    "props": {
+      "id": "menu-item-men-subitem-accessories",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu#category-men-submenu-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-men-subitem-swimwear",
+      "menu-item#category-men-subitem-accessories"
+    ]
+  },
+  "submenu#category-men": {
+    "children": [
+      "menu#category-men-submenu-0",
+      "menu#category-men-submenu-1"
+    ]
+  },
+  "menu-item#men-desktop": {
+    "props": {
+      "id": "menu-item-men-desktop",
+      "blockClass": [
+        "category-men"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Men",
+        "text": "Men"
+      }
+    },
+    "blocks": [
+      "submenu#category-men"
+    ]
+  },
+  "menu-item#sale-desktop": {
+    "props": {
+      "id": "menu-item-sale-desktop",
+      "blockClass": [
+        "category-sale"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu-item#category-outlet-subitem-pants-leggings": {
+    "props": {
+      "id": "menu-item-outlet-subitem-pants-leggings",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pants & Leggings",
+        "text": "Pants & Leggings"
+      }
+    }
+  },
+  "menu-item#category-outlet-subitem-tops": {
+    "props": {
+      "id": "menu-item-outlet-subitem-tops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tops",
+        "text": "Tops"
+      }
+    }
+  },
+  "menu-item#category-outlet-subitem-jackets-sweatshirts": {
+    "props": {
+      "id": "menu-item-outlet-subitem-jackets-sweatshirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Jackets & Sweatshirts",
+        "text": "Jackets & Sweatshirts"
+      }
+    }
+  },
+  "menu-item#category-outlet-subitem-tank-tops-shirts": {
+    "props": {
+      "id": "menu-item-outlet-subitem-tank-tops-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tank Tops and Shirts",
+        "text": "Tank Tops and Shirts"
+      }
+    }
+  },
+  "menu-item#category-outlet-subitem-shorts-skirts": {
+    "props": {
+      "id": "menu-item-outlet-subitem-shorts-skirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shorts and Skirts",
+        "text": "Shorts and Skirts"
+      }
+    }
+  },
+  "menu#category-outlet-submenu-0": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-outlet-subitem-pants-leggings",
+      "menu-item#category-outlet-subitem-tops",
+      "menu-item#category-outlet-subitem-jackets-sweatshirts",
+      "menu-item#category-outlet-subitem-tank-tops-shirts",
+      "menu-item#category-outlet-subitem-shorts-skirts"
+    ]
+  },
+  "submenu#category-outlet": {
+    "children": [
+      "menu#category-outlet-submenu-0"
+    ]
+  },
+  "menu-item#outlet-desktop": {
+    "props": {
+      "id": "menu-item-outlet-desktop",
+      "blockClass": [
+        "category-outlet"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "Outlet"
+      }
+    },
+    "blocks": [
+      "submenu#category-outlet"
+    ]
+  },
+  "menu-item#category-kids-subitem-tops": {
+    "props": {
+      "id": "menu-item-kids-subitem-tops",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Tops",
+        "text": "Tops"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-leggings": {
+    "props": {
+      "id": "menu-item-kids-subitem-leggings",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Leggings",
+        "text": "Leggings"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-thermal-shirts": {
+    "props": {
+      "id": "menu-item-kids-subitem-thermal-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Thermal Shirts",
+        "text": "Thermal Shirts"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-shirts": {
+    "props": {
+      "id": "menu-item-kids-subitem-shirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shirts",
+        "text": "Shirts"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-skirts": {
+    "props": {
+      "id": "menu-item-kids-subitem-skirts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Skirts",
+        "text": "Skirts"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-pants": {
+    "props": {
+      "id": "menu-item-kids-subitem-pants",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pants",
+        "text": "Pants"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-shorts": {
+    "props": {
+      "id": "menu-item-kids-subitem-shorts",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+  "menu#category-kids-submenu-0": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-kids-subitem-tops",
+      "menu-item#category-kids-subitem-leggings",
+      "menu-item#category-kids-subitem-thermal-shirts",
+      "menu-item#category-kids-subitem-shirts",
+      "menu-item#category-kids-subitem-skirts",
+      "menu-item#category-kids-subitem-pants",
+      "menu-item#category-kids-subitem-shorts"
+    ]
+  },
+  "menu-item#category-kids-subitem-coats": {
+    "props": {
+      "id": "menu-item-kids-subitem-coats",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Coats",
+        "text": "Coats"
+      }
+    }
+  },
+  "menu-item#category-kids-subitem-accessories": {
+    "props": {
+      "id": "menu-item-kids-subitem-accessories",
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Accessories",
+        "text": "Accessories"
+      }
+    }
+  },
+  "menu#category-kids-submenu-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-kids-subitem-coats",
+      "menu-item#category-kids-subitem-accessories"
+    ]
+  },
+  "submenu#category-kids": {
+    "children": [
+      "menu#category-kids-submenu-0",
+      "menu#category-kids-submenu-1"
+    ]
+  },
+  "menu-item#kids-desktop": {
+    "props": {
+      "id": "menu-item-kids-desktop",
+      "blockClass": [
+        "category-kids"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Kids",
+        "text": "Kids"
+      }
+    },
+    "blocks": [
+      "submenu#category-kids"
+    ]
+  },
+  "menu-item#add-your-store-desktop": {
+    "props": {
+      "id": "menu-item-add-your-store-desktop",
+      "blockClass": [
+        "category-add-your-store"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Add Your Store",
+        "text": "Add Your Store"
+      }
+    }
+  },
+  "menu#category-menu-desktop": {
+    "props": {
+      "orientation": "horizontal",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#new-in-desktop",
+      "menu-item#women-desktop",
+      "menu-item#men-desktop",
+      "menu-item#sale-desktop",
+      "menu-item#outlet-desktop",
+      "menu-item#kids-desktop",
+      "menu-item#add-your-store-desktop"
+    ]
+  },
+  "menu-item#new-in-mobile": {
+    "props": {
+      "id": "menu-item-new-in-mobile",
+      "blockClass": [
+        "category-new-in"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "New In",
+        "text": "New In"
+      }
+    }
+  },
+  "menu#category-submenu-accordion-women": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-women-subitem-pants-leggings",
+      "menu-item#category-women-subitem-tops",
+      "menu-item#category-women-subitem-jackets-sweatshirts",
+      "menu-item#category-women-subitem-short-sleeve-shirts",
+      "menu-item#category-women-subitem-thermal-shirts",
+      "menu-item#category-women-subitem-long-sleeve-shirts",
+      "menu-item#category-women-subitem-tank-tops",
+      "menu-item#category-women-subitem-bikers-shorts",
+      "menu-item#category-women-subitem-skirts",
+      "menu-item#category-women-subitem-swimwear",
+      "menu-item#category-women-subitem-accessories"
+    ]
+  },
+  "submenu.accordion#category-women": {
+    "children": [
+      "menu#category-submenu-accordion-women"
+    ]
+  },
+  "menu-item#women-mobile": {
+    "props": {
+      "id": "menu-item-women-mobile",
+      "blockClass": [
+        "category-women"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Women",
+        "text": "Women"
+      }
+    },
+    "blocks": [
+      "submenu.accordion#category-women"
+    ]
+  },
+  "menu#category-submenu-accordion-men": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-men-subitem-sweatshirts-jackets",
+      "menu-item#category-men-subitem-pants",
+      "menu-item#category-men-subitem-short-sleeve-shirts",
+      "menu-item#category-men-subitem-thermal-shirts",
+      "menu-item#category-men-subitem-tank-tops",
+      "menu-item#category-men-subitem-shorts-bermudas",
+      "menu-item#category-men-subitem-backpacks-bags",
+      "menu-item#category-men-subitem-swimwear",
+      "menu-item#category-men-subitem-accessories"
+    ]
+  },
+  "submenu.accordion#category-men": {
+    "children": [
+      "menu#category-submenu-accordion-men"
+    ]
+  },
+  "menu-item#men-mobile": {
+    "props": {
+      "id": "menu-item-men-mobile",
+      "blockClass": [
+        "category-men"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Men",
+        "text": "Men"
+      }
+    },
+    "blocks": [
+      "submenu.accordion#category-men"
+    ]
+  },
+  "menu-item#sale-mobile": {
+    "props": {
+      "id": "menu-item-sale-mobile",
+      "blockClass": [
+        "category-sale"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    }
+  },
+  "menu#category-submenu-accordion-outlet": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-outlet-subitem-pants-leggings",
+      "menu-item#category-outlet-subitem-tops",
+      "menu-item#category-outlet-subitem-jackets-sweatshirts",
+      "menu-item#category-outlet-subitem-tank-tops-shirts",
+      "menu-item#category-outlet-subitem-shorts-skirts"
+    ]
+  },
+  "submenu.accordion#category-outlet": {
+    "children": [
+      "menu#category-submenu-accordion-outlet"
+    ]
+  },
+  "menu-item#outlet-mobile": {
+    "props": {
+      "id": "menu-item-outlet-mobile",
+      "blockClass": [
+        "category-outlet"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Outlet",
+        "text": "Outlet"
+      }
+    },
+    "blocks": [
+      "submenu.accordion#category-outlet"
+    ]
+  },
+  "menu#category-submenu-accordion-kids": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#category-kids-subitem-tops",
+      "menu-item#category-kids-subitem-leggings",
+      "menu-item#category-kids-subitem-thermal-shirts",
+      "menu-item#category-kids-subitem-shirts",
+      "menu-item#category-kids-subitem-skirts",
+      "menu-item#category-kids-subitem-pants",
+      "menu-item#category-kids-subitem-shorts",
+      "menu-item#category-kids-subitem-coats",
+      "menu-item#category-kids-subitem-accessories"
+    ]
+  },
+  "submenu.accordion#category-kids": {
+    "children": [
+      "menu#category-submenu-accordion-kids"
+    ]
+  },
+  "menu-item#kids-mobile": {
+    "props": {
+      "id": "menu-item-kids-mobile",
+      "blockClass": [
+        "category-kids"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Kids",
+        "text": "Kids"
+      }
+    },
+    "blocks": [
+      "submenu.accordion#category-kids"
+    ]
+  },
+  "menu-item#add-your-store-mobile": {
+    "props": {
+      "id": "menu-item-add-your-store-mobile",
+      "blockClass": [
+        "category-add-your-store"
+      ],
+      "type": "custom",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Add Your Store",
+        "text": "Add Your Store"
+      }
+    }
+  },
+  "menu#category-menu-mobile": {
+    "props": {
+      "orientation": "vertical",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#new-in-mobile",
+      "menu-item#women-mobile",
+      "menu-item#men-mobile",
+      "menu-item#sale-mobile",
+      "menu-item#outlet-mobile",
+      "menu-item#kids-mobile",
+      "menu-item#add-your-store-mobile"
+    ]
+  }
+}
