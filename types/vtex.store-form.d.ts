@@ -1,4 +1,4 @@
-import { AtexBlock, AtexLooseBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-form}
        */
-      form: AtexBlock<{
+      form: Block<{
         /**
          * @required
          * The [entity](https://help.vtex.com/tutorial/creating-data-entity--tutorials_1265) in Master Data where the document will be saved.
@@ -31,7 +31,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-form}
        */
-      'form-input': AtexBlock<
+      'form-input': Block<
         | InputCheckbox
         | InputDropdown
         | InputRadiogroup
@@ -44,7 +44,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-form}
        */
-      'form-field-group': AtexBlock<{
+      'form-field-group': Block<{
         /**
          * @required
          * JSON schema pointer i.e. the JSON schema path (for example: `#/properties/address`) in which the form block inputs should be validated against.
@@ -66,14 +66,14 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-form}
        */
-      'form-submit': AtexLooseBlock
+      'form-submit': Block
       /**
        * Accepts an array of blocks that will be rendered when the form is successfully submitted.
        * Any children block is valid.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-form}
        */
-      'form-success': AtexLooseBlock
+      'form-success': Block
     }
   }
 }

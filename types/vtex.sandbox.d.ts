@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.sandbox}
        */
-      sandbox: AtexBlock<{
+      sandbox: Block<{
         width?: number
         height?: number
         initialContent?: string

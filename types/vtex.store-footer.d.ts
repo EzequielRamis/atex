@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,11 +8,11 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-footer}
        */
-      footer: AtexLooseBlock
-      'footer-layout': AtexBlock<{
+      footer: Block
+      'footer-layout': Block<{
         $type?: 'desktop' | 'mobile'
       }>
-      'social-networks': AtexBlock<{
+      'social-networks': Block<{
         /**
          * Text to show above of list of links.
          *
@@ -41,7 +41,7 @@ declare global {
          */
         showInColor?: boolean
       }>
-      'accepted-payment-methods': AtexBlock<{
+      'accepted-payment-methods': Block<{
         /**
          * Possible values: `mastercard`, `visa`, `diners club`
          *
@@ -55,7 +55,7 @@ declare global {
          */
         showInColor?: boolean
       }>
-      'powered-by': AtexBlock<{
+      'powered-by': Block<{
         /**
          * Whether the icons are colored or not.
          *

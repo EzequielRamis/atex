@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-list-price': AtexBlock<{
+      'product-list-price': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -37,7 +37,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-selling-price': AtexBlock<{
+      'product-selling-price': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -66,7 +66,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-spot-price': AtexBlock<{
+      'product-spot-price': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -95,7 +95,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-installments': AtexBlock<{
+      'product-installments': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -134,7 +134,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-installments-list': AtexBlock<{
+      'product-installments-list': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -171,7 +171,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-installments-list-item': AtexBlock<{
+      'product-installments-list-item': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -194,7 +194,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-price-savings': AtexBlock<{
+      'product-price-savings': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -238,7 +238,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-spot-price-savings': AtexBlock<{
+      'product-spot-price-savings': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -267,7 +267,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-list-price-range': AtexBlock<{
+      'product-list-price-range': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -295,7 +295,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-selling-price-range': AtexBlock<{
+      'product-selling-price-range': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -323,7 +323,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-seller-name': AtexBlock<{
+      'product-seller-name': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).
@@ -346,7 +346,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-price}
        */
-      'product-price-suspense': AtexBlock<{
+      'product-price-suspense': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).

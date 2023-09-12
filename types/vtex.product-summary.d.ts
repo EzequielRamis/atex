@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary': AtexBlock<{
+      'product-summary': Block<{
         $type?: string
       }>
       /**
@@ -16,13 +16,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-attachment-list': AtexLooseBlock
+      'product-summary-attachment-list': Block
       /**
        * Renders the product brand.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-brand': AtexLooseBlock
+      'product-summary-brand': Block
       /**
        * Renders the Buy button.
        * This block must only be configured if your store uses the [Minicart v1](https://github.com/vtex-apps/minicart/blob/383d7bbd3295f06d1b5854a0add561a872e1515c/docs/README.md).
@@ -30,7 +30,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-buy-button': AtexBlock<{
+      'product-summary-buy-button': Block<{
         /**
          * Whether the user should be redirected to Checkout after clicking on the Buy Button (`true`) or not (`false`).
          *
@@ -77,13 +77,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-description': AtexLooseBlock
+      'product-summary-description': Block
       /**
        * Renders the product image.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-image': AtexBlock<{
+      'product-summary-image': Block<{
         /**
          * Whether a discount badge (if there is any) will be displayed on the product's image (`true`) or not (`false`).
          *
@@ -275,7 +275,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-name': AtexBlock<{
+      'product-summary-name': Block<{
         /**
          * Defines the visibility on certain properties.
          *
@@ -314,7 +314,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-sku-name': AtexLooseBlock
+      'product-summary-sku-name': Block
       /**
        * @deprecated
        * Renders the product price.
@@ -323,13 +323,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-price': AtexLooseBlock
+      'product-summary-price': Block
       /**
        * Renders the SKU Selector block.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-summary-sku-selector': AtexBlock<{
+      'product-summary-sku-selector': Block<{
         /**
          * Whether a product variation that leads to an impossible product combination should be displayed with the disabled attribute when `displayMode` is set to `select`.
          * By default, all select options are without the disabled attribute set based on the type of variation.
@@ -492,7 +492,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-summary}
        */
-      'product-specification-badges': AtexBlock<{
+      'product-specification-badges': Block<{
         /**
          * The name of the specification group in which the desired specifications are.
          *

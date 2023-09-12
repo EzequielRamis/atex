@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/infocard}
        */
-      'info-card': AtexBlock<{
+      'info-card': Block<{
         /**
          * Where to display the call-to-action component's linked URL, as the name for a browsing context (a tab, window, or iframe).
          *

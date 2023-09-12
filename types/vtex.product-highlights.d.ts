@@ -1,4 +1,4 @@
-import { AtexBasicBlock, AtexBlock } from '.'
+import { BasicBlock, Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-highlights}
        */
-      'product-highlights': AtexBlock<{
+      'product-highlights': Block<{
         /**
          * Desired type of product highlight to be displayed.
          * Possible values are: `collection`, `promotion`, and `teaser`.
@@ -47,7 +47,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-highlights}
        */
-      'product-highlight-text': AtexBlock<{
+      'product-highlight-text': Block<{
         /**
          * Defines the block's default text message to be rendered on the UI.
          * You can also define which text message a block will render on the UI using the admin's Site Editor and the `markers` prop.
@@ -78,7 +78,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-highlights}
        */
-      'product-highlight-wrapper': AtexBasicBlock
+      'product-highlight-wrapper': BasicBlock
     }
   }
 }

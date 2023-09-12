@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-media}
        */
-      media: AtexBlock<{
+      media: Block<{
         /**
          * Type of the media to be displayed.
          * Possible values are: `image` (behaves as an image block no matter the `src`), `video` (behaves as an video block no matter the `src`), and `imageOrVideo`.

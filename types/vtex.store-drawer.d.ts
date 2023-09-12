@@ -1,4 +1,4 @@
-import { AtexBlock, AtexLooseBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-drawer}
        */
-      drawer: AtexBlock<{
+      drawer: Block<{
         /**
          * Defines the maximum width of the open drawer.
          *
@@ -67,7 +67,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-drawer}
        */
-      'drawer-close-button': AtexBlock<{
+      'drawer-close-button': Block<{
         /**
          * Defines the size of the icon inside the button.
          *
@@ -93,7 +93,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-drawer}
        */
-      'drawer-trigger': AtexBlock<{
+      'drawer-trigger': Block<{
         /**
          * Defines the event ID to be sent whenever users interact with the Drawer component.
          *
@@ -106,7 +106,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-drawer}
        */
-      'drawer-header': AtexLooseBlock
+      'drawer-header': Block
     }
   }
 }

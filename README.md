@@ -737,12 +737,12 @@ Naturally, when you are running `atex` in watch mode, a file change will re-exec
 An ATEX Component lets you split JSX away from the default function and avoid code duplication. Think of it as a regular React component.
 
 ```tsx
-import type { AtexComponent } from 'atex/types'
+import type { Component } from 'atex/types'
 
 // Any ATEX Component is typed as
-// AtexComponent<T> = (props: T, children?: string[]) => string[]
+// Component<T> = (props: T, children?: string[]) => string[]
 
-const Foo: AtexComponent<{ bar: boolean }> = (props, children) => (
+const Foo: Component<{ bar: boolean }> = (props, children) => (
   <baz bar={props.bar}>{children}</baz>
 )
 
@@ -757,14 +757,14 @@ export default () => (
 Keep in mind that each call of a component may be invalid if it produces two different definitions with the same reference; you can use a property as an identifier to solve it.
 
 ```tsx
-import type { AtexComponent } from 'atex/types'
+import type { Component } from 'atex/types'
 
 interface IFoo {
   $id: string // It can be named whatever you want
   bar: boolean
 }
 
-const Foo: AtexComponent<IFoo> = (props, children) => (
+const Foo: Component<IFoo> = (props, children) => (
   <baz
     $id={props.$id}
     bar={props.bar}

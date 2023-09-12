@@ -1,4 +1,4 @@
-export type AtexBasicBlock = {
+export type BasicBlock = {
   /**
    * Block identifier.
    *
@@ -34,29 +34,24 @@ export type AtexBasicBlock = {
 /**
  * @see {@link https://github.com/EzequielRamis/atex#atex-block}
  */
-export type AtexBlock<T> = AtexBasicBlock & T
+export type Block<T = Record<string, any>> = BasicBlock & T
 
 /**
  * @see {@link https://github.com/EzequielRamis/atex#atex-component}
  */
-export type AtexComponent<T> = (props: T, children?: string[]) => string[]
-
-/**
- * @see {@link https://github.com/EzequielRamis/atex#ambiguous-types}
- */
-export type AtexLooseBlock = AtexBlock<Record<string, any>>
+export type Component<T> = (props: T, children?: string[]) => string[]
 
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      [k: string]: AtexLooseBlock
+      [k: string]: Block
 
       /**
        * IO store builder is a opinionated way to use IO capabilities to quickly build store components that can be reused across ecommerce stores and interact seamlessly with its APIs and existing components.
        *
        * @see {@link https://github.com/vtex-apps/store}
        */
-      store: AtexLooseBlock
+      store: Block
     }
     type Element = string[]
   }

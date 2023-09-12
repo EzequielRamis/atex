@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-list': AtexBlock<{
+      'product-list': Block<{
         /**
          * Quantity badge behavior when displaying the number of total items added in Minicart.
          * Possible values are: `total` (quantity badge displays the number of items added to the cart), `distinct` (quantity badge only displays the number of different products added to the cart), `totalAvailable` (quantity badge displays the number of available items added to the cart), and `distinctAvailable` (quantity badge only displays the number of different and available products added to the cart).
@@ -38,19 +38,19 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-list-content-desktop': AtexLooseBlock
+      'product-list-content-desktop': Block
       /**
        * Creates the product list layout for mobile devices.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-list-content-mobile': AtexLooseBlock
+      'product-list-content-mobile': Block
       /**
        * Renders a message text about the product availability.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      message: AtexBlock<{
+      message: Block<{
         /**
          * Availability message position on the list.
          * Possible values are: `rows` (displaying the message in the product row) or `cols` (displaying in the product column).
@@ -64,7 +64,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-reference': AtexBlock<{
+      'product-reference': Block<{
         /**
          * Text label to be displayed to the left of the product reference value.
          *
@@ -88,7 +88,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      price: AtexBlock<{
+      price: Block<{
         /**
          * Product price position on the list.
          *
@@ -107,7 +107,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'unit-price': AtexBlock<{
+      'unit-price': Block<{
         /**
          * Product unit prices position on the list.
          *
@@ -141,7 +141,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-list-image': AtexBlock<{
+      'product-list-image': Block<{
         /**
          * Product image width (in pixels).
          *
@@ -154,19 +154,19 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-variantions': AtexLooseBlock
+      'product-variantions': Block
       /**
        * Renders a product label that displays a sua quantidade de unidades added to the cart.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'product-quantity-label': AtexLooseBlock
+      'product-quantity-label': Block
       /**
        * Renders a selector that allows users to add a chosen number of a product in their cart.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'quantity-selector': AtexBlock<{
+      'quantity-selector': Block<{
         /**
          * Mode of the quantity selector input.
          * Possible values are `default` and `stepper`.
@@ -189,7 +189,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-list}
        */
-      'remove-button': AtexBlock<{
+      'remove-button': Block<{
         /**
          * Variation for the button visual proeminence based on the [VTEX Styleguide](https://styleguide.vtex.com/#/Components/Forms/Button).
          * Possible values are: `primary`, `secondary`, `tertiary`, `inverted-tertiary`, `danger` and `danger-tertiary`.

@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-quantity}
        */
-      'product-quantity': AtexBlock<{
+      'product-quantity': Block<{
         /**
          * Displays the quantity of remaining items in stock if the available quantity is less than or equal to the value given to this property.
          *
@@ -58,7 +58,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-quantity}
        */
-      'product-summary-quantity': AtexBlock<{
+      'product-summary-quantity': Block<{
         /**
          * Displays the quantity of remaining items in stock if the available quantity is less than or equal to the value given to this property.
          *

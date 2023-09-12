@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/backtotopbutton}
        */
-      'back-to-top-button': AtexBlock<{
+      'back-to-top-button': Block<{
         /**
          * Defines the component rendering.
          * Possible values are: `button` to display a button with a `Back To Top` label text or `caret-icon` to display just an icon.

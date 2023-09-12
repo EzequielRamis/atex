@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-list': AtexBlock<{
+      'store-list': Block<{
         /**
          * Filter fetched Pickup Points by this tag.
          *
@@ -64,7 +64,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-group': AtexBlock<{
+      'store-group': Block<{
         /**
          * Title used in the page's HTML `title` tag and Structured Data for SEO purposes.
          * The `{storeName}`, `{storeCity}`, and `/` or `{storeState}` variables can be used in the title text.
@@ -98,7 +98,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-name': AtexBlock<{
+      'store-name': Block<{
         /**
          * Text to be displayed as store name.
          * `{storeName}`, `{storeCity}`, and `/` or `{storeState}` values can be used to generate the store name.
@@ -118,7 +118,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-back-link': AtexBlock<{
+      'store-back-link': Block<{
         /**
          * Text displayed by `store-back-link` block when rendered on the UI.
          *
@@ -131,7 +131,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-map': AtexBlock<{
+      'store-map': Block<{
         /**
          * Map width.
          *
@@ -163,7 +163,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-address': AtexBlock<{
+      'store-address': Block<{
         /**
          * Label for the `store-address` block when rendered on the UI.
          *
@@ -177,7 +177,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-hours': AtexBlock<{
+      'store-hours': Block<{
         /**
          * Label for the `store-hours` block when rendered on the UI.
          *
@@ -207,7 +207,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-description': AtexBlock<{
+      'store-description': Block<{
         /**
          * Text to be displayed on the store page.
          * Use `{storeName}`, `{storeCity}`, or `{storeState}` within your text to display that store's specific value.
@@ -221,7 +221,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-locator}
        */
-      'store-instructions': AtexBlock<{
+      'store-instructions': Block<{
         /**
          * Label for the `store-instructions` block when rendered on the UI.
          *

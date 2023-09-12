@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/SKUSelector}
        */
-      'sku-selector': AtexBlock<{
+      'sku-selector': Block<{
         /**
          * Whether a product variation that leads to an impossible product combination should be displayed with the disabled attribute when `displayMode` is set to `select`.
          * By default, all select options are without the disabled attribute set based on the type of variation.

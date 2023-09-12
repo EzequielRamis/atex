@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'product-assembly-options': AtexBlock<{
+      'product-assembly-options': Block<{
         /**
          * Defines whether the customization box will be opened even if an attachment is not required (`always`) or if the customization box will be opened only if the attachment is required (`required`).
          *
@@ -22,7 +22,7 @@ declare global {
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-input-values': AtexBlock<{
+      'assembly-option-input-values': Block<{
         /**
          * Defines whether a checkbox (`box`) or a dropdown list (`select`) will be used to select the attachment pre-defined options.
          *
@@ -35,32 +35,32 @@ declare global {
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-image': AtexLooseBlock
+      'assembly-option-item-image': Block
       /**
        * Displays a quantity selector.
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-quantity-selector': AtexLooseBlock
+      'assembly-option-item-quantity-selector': Block
       /**
        * Displays the attachment name.
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-name': AtexLooseBlock
+      'assembly-option-item-name': Block
       /**
        * Displays the attachment price.
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-price': AtexLooseBlock
+      'assembly-option-item-price': Block
       /**
        * Displays the `Customize` button.
        * When clicked, it opens a modal that allows customers to customize the attachment.
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-customize': AtexBlock<{
+      'assembly-option-item-customize': Block<{
         /**
          * Defines the behavior of the `Customize` button.
          * In addition to the `collapse` prop, the `buttonProps` object can include child blocks to build the content of the modal triggered when the button is clicked.
@@ -82,7 +82,7 @@ declare global {
        *
        * @see {@link https://vtex.io/docs/components/product/vtex.product-customizer}
        */
-      'assembly-option-item-children-description': AtexLooseBlock
+      'assembly-option-item-children-description': Block
     }
   }
 }

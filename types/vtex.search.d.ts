@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search}
        */
-      'autocomplete-result-list': AtexBlock<{
+      'autocomplete-result-list': Block<{
         $type: 'v2'
         /**
          * Maximum number of items in the top searches list.
@@ -113,7 +113,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search}
        */
-      'search-banner': AtexBlock<{
+      'search-banner': Block<{
         /**
          * Area where the banner will be displayed in the store.
          * This needs to match the predefined area value in the banner configuration.
@@ -134,13 +134,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search/didyoumean}
        */
-      'did-you-mean': AtexLooseBlock
+      'did-you-mean': Block
       /**
        * Renders a list of similar search terms for the current search query.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search/suggestions}
        */
-      'search-suggestions': AtexBlock<{
+      'search-suggestions': Block<{
         /**
          * Defines a custom page to the link of a suggestion.
          * Example: `store.search.custom`.

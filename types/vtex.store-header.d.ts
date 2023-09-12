@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-header}
        */
-      'header-layout': AtexBlock<{
+      'header-layout': Block<{
         $type: 'desktop' | 'mobile'
       }>
       /**
@@ -16,7 +16,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-header}
        */
-      'header-row': AtexBlock<{
+      'header-row': Block<{
         /**
          * CSS property that controls the vertical stacking order of elements for overlapping.
          *
@@ -47,7 +47,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-header}
        */
-      'header-border': AtexBlock<{
+      'header-border': Block<{
         /**
          * Whether the Header margin should be fixed in the layout or not.
          *
@@ -60,13 +60,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-header}
        */
-      'header-force-center': AtexLooseBlock
+      'header-force-center': Block
       /**
        * Adds spacing between blocks throughout a Header row.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-header}
        */
-      'header-spacer': AtexLooseBlock
+      'header-spacer': Block
     }
   }
 }

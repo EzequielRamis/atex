@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.tab-layout}
        */
-      'tab-layout': AtexBlock<{
+      'tab-layout': Block<{
         /**
          * ID of the desired tab to be rendered as the default one.
          * If no value is provided, the first tab declared in the theme will be used as default.
@@ -23,7 +23,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.tab-layout}
        */
-      'tab-list': AtexBlock<
+      'tab-list': Block<
         | {
             $type?: undefined
           }
@@ -74,7 +74,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.tab-layout}
        */
-      'tab-content': AtexBlock<{
+      'tab-content': Block<{
         /**
          * Defines the content for a given tab.
          */

@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.login}
        */
-      login: AtexBlock<{
+      login: Block<{
         /**
          * Text to entitle the login options.
          *
@@ -184,7 +184,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.login}
        */
-      'login-content': AtexBlock<{
+      'login-content': Block<{
         /**
          * Whether only the login options will be displayed on the initial screen (`true`) or not (`false`).
          *

@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/productname}
        */
-      'product-name': AtexBlock<{
+      'product-name': Block<{
         /**
          * Displays the product name (`plainText`) or the link to the product page (`linkToProductPage`).
          *

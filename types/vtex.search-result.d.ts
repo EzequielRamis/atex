@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-result-layout': AtexBlock<
+      'search-result-layout': Block<
         | { $type?: undefined }
         | {
             /**
@@ -361,14 +361,14 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-layout-switcher': AtexLooseBlock
+      'search-layout-switcher': Block
       /**
        * Builds the whole search result page structure for scenarios in which no result was fetched.
        * It is rendered whenever users search for a term that doesn't return a product.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-not-found-layout': AtexBlock<{
+      'search-not-found-layout': Block<{
         /**
          * Indicates which filters should be hidden.
          *
@@ -487,7 +487,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      gallery: AtexBlock<{
+      gallery: Block<{
         /**
          * @see {@link https://developers.vtex.com/vtex-developer-docs/docs/vtex-io-documentation-building-a-search-results-page-with-multiple-layouts}
          */
@@ -507,7 +507,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'gallery-layout-switcher': AtexBlock<{
+      'gallery-layout-switcher': Block<{
         /**
          * List of layouts used to arrange and display the items on the search results page.
          * If no value is provided, the `gallery` block must receive a `product-summary-shelf` block instead as a child.
@@ -544,7 +544,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'gallery-layout-option': AtexBlock<{
+      'gallery-layout-option': Block<{
         /**
          * Name of the layout option.
          *
@@ -558,32 +558,32 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'not-found': AtexLooseBlock
+      'not-found': Block
       /**
        * Decides, behind the scenes, which block will be displayed: either the `gallery` block (if products are found) or the `not-found` block (if the selected filters lead to an empty search results page).
        * This means that both `gallery` and `not-found` must be declared as `search-content` children.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-content': AtexLooseBlock
+      'search-content': Block
       /**
        * Displays the total number of products being displayed on the search results page.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-products-count-per-page': AtexLooseBlock
+      'search-products-count-per-page': Block
       /**
        * Displays a progress bar of products being displayed on the search results page.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-products-progress-bar': AtexLooseBlock
+      'search-products-progress-bar': Block
       /**
        * Allows users to choose the product ordination on the search results page.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'order-by': AtexBlock<{
+      'order-by': Block<{
         $type: 'v2'
         /**
          * Indicates which sorting options by specification will be displayed.
@@ -637,7 +637,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'filter-navigator': AtexBlock<{
+      'filter-navigator': Block<{
         $type: 'v3'
         /**
          * Determines whether the category filters should use the `href` attribute with the category pages' URLs (`href`) or not (`default`).
@@ -802,7 +802,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'total-products': AtexBlock<{
+      'total-products': Block<{
         $type: 'v2'
       }>
       /**
@@ -810,7 +810,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-title': AtexBlock<{
+      'search-title': Block<{
         $type: 'v2'
       }>
       /**
@@ -819,7 +819,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-fetch-more': AtexBlock<{
+      'search-fetch-more': Block<{
         /**
          * Which HTML element will be displayed for `Show more` button component.
          * Possible values are: `a` (displays a `<a>` element with `href` and `rel` attributes) or `button` (displays a `<button>` element without `href` and `rel` attributes).
@@ -834,7 +834,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'search-fetch-previous': AtexBlock<{
+      'search-fetch-previous': Block<{
         /**
          * Which HTML element will be displayed for `Show previous` button component.
          * Possible values are: `a` (displays a `<a>` element with `href` and `rel` attributes) or `button` (displays a `<button>` element without `href` and `rel` attributes).
@@ -848,7 +848,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.search-result}
        */
-      'sidebar-close-button': AtexBlock<{
+      'sidebar-close-button': Block<{
         /**
          * Size of the button icon.
          *

@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/productbrand}
        */
-      'product-brand': AtexBlock<{
+      'product-brand': Block<{
         /**
          * The brand ID.
          * If no value is declared, the product context should provide the data.

@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -6,7 +6,7 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      minicart: AtexBlock<{
+      minicart: Block<{
         $type: 'v2'
         /**
          * Minicart behavior when rendered.
@@ -90,23 +90,23 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      'minicart-base-content': AtexLooseBlock
+      'minicart-base-content': Block
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      'minicart-empty-state': AtexLooseBlock
+      'minicart-empty-state': Block
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      'minicart-product-list': AtexLooseBlock
+      'minicart-product-list': Block
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      'minicart-summary': AtexLooseBlock
+      'minicart-summary': Block
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-customizer}
        */
-      'minicart-checkout-button': AtexLooseBlock
+      'minicart-checkout-button': Block
     }
   }
 }

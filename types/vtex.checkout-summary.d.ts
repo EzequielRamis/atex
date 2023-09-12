@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -6,7 +6,7 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.checkout-summary}
        */
-      'checkout-summary': AtexBlock<{
+      'checkout-summary': Block<{
         $type?: 'compact'
         /**
          * @default undefined
@@ -37,18 +37,18 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.checkout-summary}
        */
-      'summary-totalizers': AtexLooseBlock
+      'summary-totalizers': Block
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.checkout-summary}
        */
-      'summary-coupon': AtexLooseBlock
+      'summary-coupon': Block
       /**
        * Renders the product installments.
        * If more than one option is available, the one with the biggest number of installments will be displayed.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.checkout-summary}
        */
-      'summary-installments': AtexBlock<{
+      'summary-installments': Block<{
         /**
          * IDs of your choosing to identify the block's rendered message and customize it using the admin's Site Editor.
          * Learn how to use them accessing the documentation on [Using the Markers prop to customize a block's message](https://vtex.io/docs/recipes/style/using-the-markers-prop-to-customize-a-blocks-message).

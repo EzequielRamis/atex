@@ -1,4 +1,4 @@
-import { AtexBlock, AtexLooseBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'product-gifts': AtexBlock<{
+      'product-gifts': Block<{
         /**
          * Maximum number of gifts that will be displayed at once.
          *
@@ -21,7 +21,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'gift-text': AtexBlock<{
+      'gift-text': Block<{
         /**
          * A translatable string (according to [ICU pattern](https://formatjs.io/guides/message-syntax/)) that has variables that might be used to render any desired text regarding the gifts.
          *
@@ -35,13 +35,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'product-gift-list': AtexLooseBlock
+      'product-gift-list': Block
       /**
        * Renders the product's gift name.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'gift-name': AtexBlock<{
+      'gift-name': Block<{
         /**
          * Whether or not the `gift-name` block should be a link to the gift's product page.
          *
@@ -61,7 +61,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'gift-image': AtexBlock<{
+      'gift-image': Block<{
         /**
          * Gift image maximum width.
          *
@@ -98,7 +98,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-gifts}
        */
-      'gift-description': AtexLooseBlock
+      'gift-description': Block
     }
   }
 }

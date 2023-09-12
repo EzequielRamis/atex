@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-specifications}
        */
-      'product-specification-group': AtexBlock<{
+      'product-specification-group': Block<{
         /**
          * Filters the specifications that should be displayed by the block.
          *
@@ -36,7 +36,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-specifications}
        */
-      'product-specification': AtexLooseBlock
+      'product-specification': Block
       /**
        * Renders the product specification value.
        * It should be declared as a children of `product-specification`.
@@ -44,14 +44,14 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-specifications}
        */
-      'product-specification-values': AtexLooseBlock
+      'product-specification-values': Block
       /**
        * Mandatory children of `product-specification-group`, `product-specification` and `product-specification-value`.
        * Depending on which block it is declared, the `product-specification-text` renders data regarding a specification group, a specification, or a specification value.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-specifications}
        */
-      'product-specification-text': AtexBlock<{
+      'product-specification-text': Block<{
         /**
          * Defines the block's default text message to be rendered on the UI.
          * You can also define which text message a block will render on the UI using the admin's Site Editor and the `markers` prop.

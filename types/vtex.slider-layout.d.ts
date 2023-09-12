@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.slider-layout}
        */
-      'slider-layout': AtexBlock<{
+      'slider-layout': Block<{
         /**
          * `aria-label` attribute value to be used by the `<Slider/>` component when rendered.
          * The `aria-label` value should explicitly tell users what the inspected HTML element does.
@@ -153,7 +153,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.slider-layout}
        */
-      'slider-layout-group': AtexLooseBlock
+      'slider-layout-group': Block
     }
   }
 }

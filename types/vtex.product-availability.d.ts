@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-availability}
        */
-      'product-availability': AtexBlock<{
+      'product-availability': Block<{
         /**
          * Minimum product quantity that makes the low stock message to be displayed (if any message is set in the `lowStockMessage` prop).
          *

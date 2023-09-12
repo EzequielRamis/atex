@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-layout': AtexBlock<{
+      'disclosure-layout': Block<{
         /**
          * Defines the initial visibility of the layout content.
          * Possible values are: `visible` (content initially open) or `hidden` (content is only displayed with user interaction).
@@ -31,7 +31,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-trigger': AtexBlock<{
+      'disclosure-trigger': Block<{
         /**
          * Name of the block that will be rendered when prompt to show the content.
          *
@@ -60,7 +60,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-content': AtexBlock<{
+      'disclosure-content': Block<{
         /**
          * List of blocks that will render the desired disclosure content.
          *
@@ -73,7 +73,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-state-indicator': AtexBlock<{
+      'disclosure-state-indicator': Block<{
         /**
          * Name of the block that will be rendered when prompt to show the content.
          *
@@ -93,7 +93,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-layout-group': AtexBlock<{
+      'disclosure-layout-group': Block<{
         /**
          * Defines how many `disclosure-layout` blocks should be displayed at time.
          * Possible values are: `one` (only one `disclosure-layout` block should have its content displayed at time) or `many` (different `disclosure-layout`'s contents can be displayed at time).
@@ -106,7 +106,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.disclosure-layout}
        */
-      'disclosure-trigger-group': AtexBlock<{
+      'disclosure-trigger-group': Block<{
         /**
          * Name of the block that will be rendered when prompt to show the content.
          *

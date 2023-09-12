@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -6,7 +6,7 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.menu}
        */
-      menu: AtexBlock<{
+      menu: Block<{
         orientation?: 'vertical' | 'horizontal'
         categoryId?: number
         textType?:
@@ -26,11 +26,11 @@ declare global {
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.menu}
        */
-      'menu-item': AtexBlock<MenuItem>
+      'menu-item': Block<MenuItem>
       /**
        * @see {@link https://developers.vtex.com/docs/apps/vtex.menu}
        */
-      submenu: AtexBlock<{
+      submenu: Block<{
         $type?: 'accordion'
         width?: '100%' | 'auto'
         isOpen?: boolean

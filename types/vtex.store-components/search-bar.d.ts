@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/searchbar}
        */
-      'search-bar': AtexBlock<{
+      'search-bar': Block<{
         /**
          * If `true` when clicked on result link of brand, department or category will link to the corresponding brand, department or category page.
          * When `false` will always go to a full text search page.

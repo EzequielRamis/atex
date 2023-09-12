@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.overlay-layout}
        */
-      'overlay-trigger': AtexBlock<{
+      'overlay-trigger': Block<{
         /**
          * Defines whether the popover-layout will be opened by click (`click`) or hover (`hover`).
          *
@@ -21,7 +21,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.overlay-layout}
        */
-      'overlay-layout': AtexBlock<{
+      'overlay-layout': Block<{
         /**
          * Defines the Overlay Layout content placement when it is triggered according to the Trigger component positioning.
          * Possible values are: `bottom`, `left`, `right` or `top`.

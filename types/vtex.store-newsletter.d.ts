@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-form': AtexBlock<{
+      'newsletter-form': Block<{
         /**
          * Block to be rendered if the submission of the form fails.
          * If none is passed, a default error component will be rendered.
@@ -36,7 +36,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-input-email': AtexBlock<{
+      'newsletter-input-email': Block<{
         /**
          * Placeholder text for the email input.
          *
@@ -61,7 +61,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-input-name': AtexBlock<{
+      'newsletter-input-name': Block<{
         /**
          * Placeholder text for name input.
          *
@@ -86,7 +86,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-input-phone': AtexBlock<{
+      'newsletter-input-phone': Block<{
         /**
          * Placeholder text for phone input.
          *
@@ -111,7 +111,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-checkbox-confirmation': AtexBlock<{
+      'newsletter-checkbox-confirmation': Block<{
         /**
          * Label for the confirmation checkbox.
          * This prop supports the [ICU Message Format](https://format-message.github.io/icu-message-format-for-translators/), exposing two variables for you to interpolate: `firstLink` and `secondLink`.
@@ -163,7 +163,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-hidden-field': AtexBlock<{
+      'newsletter-hidden-field': Block<{
         /**
          * Desired hidden fields responsible for saving the user's custom data on [Master Data](https://help.vtex.com/en/tutorial/what-is-master-data--4otjBnR27u4WUIciQsmkAw) once the newsletter form is submitted.
          * Notice that the name of the fields must be written in an array and represent which user data they save.
@@ -179,7 +179,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-newsletter}
        */
-      'newsletter-submit': AtexBlock<{
+      'newsletter-submit': Block<{
         /**
          * Text displayed on the submit button.
          *

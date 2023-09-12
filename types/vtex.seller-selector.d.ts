@@ -1,4 +1,4 @@
-import { AtexBlock, AtexLooseBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-table': AtexBlock<{
+      'seller-table': Block<{
         /**
          * Max number of shipping options to be displayed.
          *
@@ -22,20 +22,20 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-simulate-shipping': AtexLooseBlock
+      'seller-simulate-shipping': Block
       /**
        * Builds a header to be used on the Seller Selector table.
        * You can pass to it the `seller-head-cell` block as children.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-head': AtexLooseBlock
+      'seller-head': Block
       /**
        * Defines a title for each column in the table header.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-head-cell': AtexBlock<{
+      'seller-head-cell': Block<{
         /**
          * Text displayed on the table header for each column.
          *
@@ -49,45 +49,45 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-body': AtexLooseBlock
+      'seller-body': Block
       /**
        * Used inside the Seller Selector table to separate seller's data into columns.
        * You can use the blocks listed below (`seller-name`, `seller-price`, `seller-shipping`, `seller-price-with-shipping`, `seller-add-to-cart`) as seller-row's children in order to provide all needed seller's data.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-row': AtexLooseBlock
+      'seller-row': Block
       /**
        * Displays the seller name.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-name': AtexLooseBlock
+      'seller-name': Block
       /**
        * Displays the seller price for a given product.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-price': AtexLooseBlock
+      'seller-price': Block
       /**
        * Displays shipping cost considering the sellers' data.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-shipping': AtexLooseBlock
+      'seller-shipping': Block
       /**
        * Displays the purchase final cost (shipping cost + product price).
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-price-with-shipping': AtexLooseBlock
+      'seller-price-with-shipping': Block
       /**
        * Displays a Buy button that adds a given seller's product to the shopping cart.
        * It is possible to use two different blocks inside of it `buy-button` or `add-to-cart-button`.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.seller-selector}
        */
-      'seller-add-to-cart': AtexBlock<{
+      'seller-add-to-cart': Block<{
         /**
          * Defines if users will keep navigating in the same page once the Buy button was clicked on (`true`) or if they will be redirected (`false`)
          *

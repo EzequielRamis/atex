@@ -1,4 +1,4 @@
-import { AtexBlock } from '..'
+import { Block } from '..'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.store-components/shippingsimulator}
        */
-      'shipping-simulator': AtexBlock<{
+      'shipping-simulator': Block<{
         /**
          * If the product has gifts or attachments, for example, you can choose whether the shipping information will be grouped (`grouped`) by shipping type or showing the shipping prices for each of the items individually (`individualItems`).
          *

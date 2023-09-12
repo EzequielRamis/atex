@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.breadcrumb}
        */
-      breadcrumb: AtexBlock<{
+      breadcrumb: Block<{
         $type?: 'search'
         /**
          * It determines whether Breadcrumb should also be displayed on mobile.

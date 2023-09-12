@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.similar-products-variants}
        */
-      'similar-products-variants': AtexBlock<{
+      'similar-products-variants': Block<{
         /**
          * The identifier of the image thumbnail displayed for each variant.
          * The identifier is set in the Admin’s Catalog.

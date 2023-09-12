@@ -1,4 +1,4 @@
-import { AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -9,7 +9,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.rich-text}
        */
-      'rich-text': AtexBlock<{
+      'rich-text': Block<{
         /**
          * Tachyon token to be used as font.
          *

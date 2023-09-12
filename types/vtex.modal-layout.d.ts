@@ -1,4 +1,4 @@
-import { AtexLooseBlock, AtexBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,7 +8,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.modal-layout}
        */
-      'modal-trigger': AtexBlock<{
+      'modal-trigger': Block<{
         /**
          * Defines whether the modal content should be triggered by user click (`click`), when the page is fully loaded (`load`), or when the page is fully loaded, but the modal will appear just once per session (`load-session`).
          *
@@ -36,7 +36,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.modal-layout}
        */
-      'modal-layout': AtexBlock<{
+      'modal-layout': Block<{
         /**
          * Defines how users should scroll the modal.
          * Possible values are: `body` (users can scroll the whole modal by normally scrolling the page) and `content` (users can scroll the modal *content* when hovering over it).
@@ -86,7 +86,7 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.modal-layout}
        */
-      'modal-header': AtexBlock<{
+      'modal-header': Block<{
         /**
          * Defines whether the close icon button should be rendered in the modal header (`true`) or not (`false`).
          *
@@ -106,13 +106,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.modal-layout}
        */
-      'modal-content': AtexLooseBlock
+      'modal-content': Block
       /**
        * Logical block that only renders its child blocks that, in turn, render call-to-action buttons inside the modal, such as a confirmation button.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.modal-layout}
        */
-      'modal-actions': AtexBlock<
+      'modal-actions': Block<
         | { $type?: undefined }
         | {
             /**

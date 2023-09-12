@@ -1,4 +1,4 @@
-import { AtexBlock, AtexLooseBlock } from '.'
+import { Block } from '.'
 
 declare global {
   namespace JSX {
@@ -8,13 +8,13 @@ declare global {
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-comparison}
        */
-      'product-comparison-drawer': AtexLooseBlock
+      'product-comparison-drawer': Block
       /**
        * Logical block that, once extended, is responsible for rendering the Product Comparison component's features.
        *
        * @see {@link https://developers.vtex.com/docs/apps/vtex.product-comparison}
        */
-      'product-comparison-block': AtexBlock<
+      'product-comparison-block': Block<
         | Selector
         | CloseButton
         | ProductSummaryRow
