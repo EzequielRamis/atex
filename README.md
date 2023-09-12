@@ -2,13 +2,13 @@
 
 # ATEX 💣
 
-A [Vite](https://vitejs.dev/) powered tool made for Frontend Developers working in companies that use VTEX to develop eCommerce websites.
+A [Vite](https://vitejs.dev/) powered tool made for Frontend Developers (VTEX IO Developers) working in companies that use VTEX to develop eCommerce websites.
 
 ## Why ATEX
 
 [VTEX](https://vtex.com) is a SaaS platform with a variety of products and services dedicated to eCommerce, such as an OMS, a CMS, etc.
 
-As a frontend developer, your job is to develop and maintain websites with one of these products, the [VTEX Store Framework](https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-vtex-store-framework).
+As a Frontend Developer, your job is to develop and maintain websites with one of these products, the [VTEX Store Framework](https://developers.vtex.com/docs/guides/vtex-io-documentation-what-is-vtex-store-framework).
 
 ### The Problems
 
