@@ -1,15 +1,18 @@
 import pt from 'node:path'
 
 export function isJsPath(path: string): boolean {
-  return pt.extname(path) === '.js' || pt.extname(path) === '.ts'
+  const ext = pt.extname(path)
+  return ext === '.js' || ext === '.ts'
 }
 
 export function isJsxPath(path: string): boolean {
-  return pt.extname(path) === '.jsx' || pt.extname(path) === '.tsx'
+  const ext = pt.extname(path)
+  return ext === '.jsx' || ext === '.tsx'
 }
 
 export function isJsonPath(path: string): boolean {
-  return pt.extname(path) === '.json'
+  const ext = pt.extname(path)
+  return ext === '.json' || ext === '.jsonc' || ext === '.json5'
 }
 
 export function isSupportedPath(path: string): boolean {

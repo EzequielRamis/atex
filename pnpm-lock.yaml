@@ -14,6 +14,9 @@ dependencies:
   vite:
     specifier: ^4.4.8
     version: 4.4.8(@types/node@20.4.6)
+  vite-plugin-json5:
+    specifier: 1.0.7
+    version: 1.0.7(vite@4.4.8)
   vite-tsconfig-paths:
     specifier: ^4.2.0
     version: 4.2.0(typescript@5.1.6)(vite@4.4.8)
@@ -1133,6 +1136,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /json5@2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
+    engines: {node: '>=6'}
+    hasBin: true
+    dev: false
+
   /jsonc-parser@3.2.0:
     resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
@@ -1729,6 +1738,15 @@ packages:
       - supports-color
       - terser
     dev: true
+
+  /vite-plugin-json5@1.0.7(vite@4.4.8):
+    resolution: {integrity: sha512-k7tL11MhlRUSZsM9GrvvC1RVLiOMNXOWWDroNjTY+ACfor7m/w9fQ1Y7TLj6KW76HFJ2OYsWfNurSj8GxI9Ptg==}
+    peerDependencies:
+      vite: ^2.6.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      json5: 2.2.3
+      vite: 4.4.8(@types/node@20.4.6)
+    dev: false
 
   /vite-tsconfig-paths@4.2.0(typescript@5.1.6)(vite@4.4.8):
     resolution: {integrity: sha512-jGpus0eUy5qbbMVGiTxCL1iB9ZGN6Bd37VGLJU39kTDD6ZfULTTb1bcc5IeTWqWJKiWV5YihCaibeASPiGi8kw==}

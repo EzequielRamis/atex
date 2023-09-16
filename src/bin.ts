@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 import { cac } from 'cac'
 import { createServer } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import json5Plugin from 'vite-plugin-json5'
 import {
   loadJsonModule,
   writeModule,
@@ -59,6 +60,7 @@ if (!parsed.options.help) {
         tsconfigPaths({
           root: '..',
         }),
+        json5Plugin(),
       ],
       configFile: false,
       envFile: false,

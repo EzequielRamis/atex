@@ -1,6 +1,10 @@
 # atex/types
 
-A complete list of types for each VTEX App, configured in `tsconfig.json`:
+This directory contains the following declaration files:
+
+- `index.d.ts`: Basic JSX types.
+- `modules.d.ts`: Declarations to support `.jsonc` imports.
+- `all.d.ts`: A complete list of types for each VTEX App:
 
 ```json
 "types": [ "atex/types/all" ]

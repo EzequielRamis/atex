@@ -6,6 +6,6 @@
     "esModuleInterop": true,
     "checkJs": true,
     "noEmit": true,
-    "types": ["node", "../../types/all"]
+    "types": ["node", "../../types/all", "../../types/modules"]
   }
 }

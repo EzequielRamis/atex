@@ -191,8 +191,11 @@ $ pnpm add -D typescript @types/node
     "esModuleInterop": true,
     "checkJs": true,
     "noEmit": true,
-    "types": ["node", "atex/types/all"]
-  }
+    "types": [
+      "node",
+      "atex/types/all",
+      "atex/types/modules"
+    ]
 }
 ```
 
@@ -726,7 +729,7 @@ In ATEX, a file with this human-readable format has three special features.
 - Its JSON is exported like an ATEX Module. However, it is done as it is, meaning that it behaves the same as if it were in `store`. So, you could write normal VTEX blocks, `routes.json`, `interfaces.json`, etc in `atex/src`.
 - If you want to write and consume a JSON module without exporting it to `store`, add a `_` prefix to its basename.
 
-**Warning:** JSON extensions like JSONC or JSON5 are not supported.
+**Author's note:** JSONC and JSON5 extensions are supported to ease [migration](#incremental-migration).
 
 ##### Propagation
 
@@ -974,8 +977,6 @@ Options:
 ### Incremental migration
 
 As explained in [Usage/JSON](#json), ATEX supports `.json` files which behave the same as if they were at `store`. So, if you are considering a migration, you can copy all files from `store` to `atex/src` and slowly replace them with ATEX modules.
-
-**Warning:** JSON extensions like JSONC or JSON5 are not supported.
 
 ## Legal
 
