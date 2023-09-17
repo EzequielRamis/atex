@@ -158,14 +158,14 @@ Ending the preface, let's see some basics to get into it.
 
 ### Getting started
 
-1. Install `atex`:
+1. Install `@eramis/atex`:
 
 ```sh
-$ npm install -g atex
+$ npm install -g @eramis/atex
 # or
-$ yarn global add atex
+$ yarn global add @eramis/atex
 # or
-$ pnpm add -g atex
+$ pnpm add -g @eramis/atex
 ```
 
 2. At your storefront repository, install the following development dependencies:
@@ -193,8 +193,8 @@ $ pnpm add -D typescript @types/node
     "noEmit": true,
     "types": [
       "node",
-      "atex/types/all",
-      "atex/types/modules"
+      "@eramis/atex/types/all",
+      "@eramis/atex/types/modules"
     ]
 }
 ```
@@ -740,7 +740,7 @@ Naturally, when you are running `atex` in watch mode, a file change will re-exec
 An ATEX Component lets you split JSX away from the default function and avoid code duplication. Think of it as a regular React component.
 
 ```tsx
-import type { Component } from 'atex/types'
+import type { Component } from '@eramis/atex'
 
 // Any ATEX Component is typed as
 // Component<T> = (props: T, children?: string[]) => string[]
@@ -760,7 +760,7 @@ export default () => (
 Keep in mind that each call of a component may be invalid if it produces two different definitions with the same reference; you can use a property as an identifier to solve it.
 
 ```tsx
-import type { Component } from 'atex/types'
+import type { Component } from '@eramis/atex'
 
 interface IFoo {
   $id: string // It can be named whatever you want

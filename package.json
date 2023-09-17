@@ -1,5 +1,5 @@
 {
-  "name": "atex",
+  "name": "@eramis/atex",
   "description": "Write JSX with ATEX, an esoteric tool for the VTEX Store Framework 💣",
   "version": "1.0.0",
   "license": "LGPL-3.0-or-later",
@@ -19,9 +19,7 @@
   "bin": {
     "atex": "./dist/bin.js"
   },
-  "exports": {
-    "./types/*": "./types/*.d.ts"
-  },
+  "types": "./types/index.d.ts",
   "files": ["dist", "types"],
   "keywords": [
     "vtex",
