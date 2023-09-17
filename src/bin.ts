@@ -53,7 +53,7 @@ cli.help()
 
 const parsed = cli.parse()
 
-if (!parsed.options.help) {
+if (!parsed.options.help && !parsed.options.version) {
   ;(async () => {
     const server = await createServer({
       plugins: [
