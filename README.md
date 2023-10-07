@@ -478,7 +478,8 @@ Defines:
 </tbody>
 </table>
 
-**Warning:** I have said "it is very common" but [this is not always the case](https://developers.vtex.com/docs/apps/vtex.condition-layout#step-3-defining-the-desired-conditions). `"Then"` and `"Else"` props accept strings, not string arrays. As a workaround, and knowing that every JSX expression always returns a string array, you can type `(<component-name />)[0]` to get the `"component-name"` string value. Yeah, it's a little gross.
+> [!WARNING]
+> I have said "it is very common" but [this is not always the case](https://developers.vtex.com/docs/apps/vtex.condition-layout#step-3-defining-the-desired-conditions). `"Then"` and `"Else"` props accept strings, not string arrays. As a workaround, and knowing that every JSX expression always returns a string array, you can type `(<component-name />)[0]` to get the `"component-name"` string value. Yeah, it's a little gross.
 
 <table>
 <thead>
@@ -729,7 +730,8 @@ In ATEX, a file with this human-readable format has three special features.
 - Its JSON is exported like an ATEX Module. However, it is done as it is, meaning that it behaves the same as if it were in `store`. So, you could write normal VTEX blocks, `routes.json`, `interfaces.json`, etc in `atex/src`.
 - If you want to write and consume a JSON module without exporting it to `store`, add a `_` prefix to its basename.
 
-**Author's note:** JSONC and JSON5 extensions are supported to ease [migration](#incremental-migration).
+> [!NOTE]
+> JSONC and JSON5 extensions are supported to ease [migration](#incremental-migration).
 
 ##### Propagation
 
@@ -792,7 +794,8 @@ export default () => (
 )
 ```
 
-**Author's note:** It can be difficult to understand, even more considering [this behaviour](#importing-atex-components), and might be unnecesary, but the option to use it exists.
+> [!NOTE]
+> It can be difficult to understand, even more considering [this behaviour](#importing-atex-components), and might be unnecesary, but the option to use it exists.
 
 ### IDE
 
@@ -850,7 +853,8 @@ import { menuItems } from '../../../content/header'
 import { menuItems } from '@content/header'
 ```
 
-**Note:** You need to restart ATEX when you update your paths mappings.
+> [!IMPORTANT]
+> You need to restart ATEX when you update your paths mappings.
 
 ### Quirks
 
